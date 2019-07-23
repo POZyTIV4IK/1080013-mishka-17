@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Temirlan Aitkali](https://up.htmlacademy.ru/adaptive/17/user/1080013).
-* Наставник: `Неизвестно`.
+* Наставник: [Удовенко Марина](https://htmlacademy.ru/profile/id7570).
 
 ---
 
