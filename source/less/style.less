@@ -9,12 +9,29 @@
 @import "blocks/social.less";
 @import "blocks/top-item.less";
 @import "blocks/user-list.less";
+@import "blocks/button.less";
 
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url("../fonts/opensansbold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff2") format("woff2");
+}
 
 body {
   width: 320px;
   padding: 0;
   margin: 0 auto;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  color: #444444;
+
+  h2,
+  li {
+    color: black;
+  }
 }
 
 .visually-hidden {
@@ -28,14 +45,4 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-@font-face {
-  font-family: "Open Sans Bold";
-  src: url("../fonts/opensansbold.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/opensans.woff2") format("woff2");
 }
