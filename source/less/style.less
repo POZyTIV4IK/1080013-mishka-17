@@ -1,0 +1,48 @@
+@import "blocks/about-us.less";
+@import "blocks/info.less";
+@import "blocks/main-nav.less";
+@import "blocks/page-footer.less";
+@import "blocks/page-header.less";
+@import "blocks/page-main.less";
+@import "blocks/product.less";
+@import "blocks/site-list.less";
+@import "blocks/social.less";
+@import "blocks/top-item.less";
+@import "blocks/user-list.less";
+@import "blocks/button.less";
+
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url("../fonts/opensansbold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff2") format("woff2");
+}
+
+body {
+  width: 320px;
+  padding: 0;
+  margin: 0 auto;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  color: #444444;
+
+  h2,
+  li {
+    color: black;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
