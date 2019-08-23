@@ -1,7 +1,7 @@
 .top-item {
   margin: 0;
   padding: 0;
-  padding-left: 30px;
+  margin-left: 30px;
 
   p {
     margin: 0;
@@ -42,23 +42,18 @@
   margin: 0;
   padding: 0;
   margin-top: 35px;
+  margin-left: -2px;
+  margin-bottom: 29px;
 
   tr {
+    width: 260px;
     margin: 0;
     padding: 0;
     height: 41px;
-    position: relative;
-    display: block;
     padding-top: 17px;
-  }
-
-  tr::before {
-    position: absolute;
-    content: "";
-    width: 260px;
-    height: 1px;
-    background: #444444;
-    bottom: -3px;
+    display: block;
+    border-bottom: 1px solid #ececec;
+    text-align: left;
   }
 }
 
@@ -67,6 +62,7 @@
 }
 
 .top-item__image {
+  padding: 0;
   margin-bottom: 30px;
 }
 
