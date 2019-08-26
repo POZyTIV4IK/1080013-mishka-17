@@ -14,6 +14,7 @@
     <nav class="main-nav">
       <!-- <button class="main-nav__toggle" type="button">Открыть меню</button> -->
       <div class="main-nav__wrapper">
+        <div class="main-nav__logo-wrapper">
         <a class="main-nav__logo">
           <picture>
             <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
@@ -22,23 +23,29 @@
           </picture>
         </a>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--catalog">
             <a href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--handmade">
             <a href="form.html">Вязание на заказ</a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--new">
             <a href="#">Новые поступления</a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--sale">
             <a href="#">Распродажа</a>
           </li>
         </ul>
-
+      </div>
         <ul class="main-nav__list user-list">
-          <li class="user-list__item">
-            <a class="user-list__login" href="#">Корзина: пока пуста</a>
+            <li class="user-list__item user-list__item--search">
+              <a class="user-list__link" href="#">Поиск по сайту</a>
+            </li>
+          <li class="user-list__item user-list__item--basket">
+            <a class="user-list__link" href="#">Корзина: пока пуста</a>
+          </li>
+          <li class="user-list__item user-list__item--delivery">
+            <p class="user-list__delivery">Бесплатная доставка по России</p>
           </li>
         </ul>
       </div>

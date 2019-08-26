@@ -4,6 +4,9 @@
 }
 
 .info__header {
+  background: #f9f9f9 url("../img/hero-mobile@1x.jpg") no-repeat 50% 0;
+  background-size: 575px 373px;
+
   p {
     padding: 0;
     margin: 0;
@@ -19,8 +22,6 @@
   padding-bottom: 123px;
   margin: 0 auto;
   text-align: center;
-  background: #f9f9f9 url("../img/hero-mobile@1x.jpg") no-repeat 50% 0;
-  background-size: 575px 373px;
 }
 
 .info__wrap {
@@ -55,11 +56,14 @@
 }
 
 @media (min-width: 768px) {
+  .info__header {
+    background: #f9f9f9 url("../img/hero-tablet@1x.jpg") no-repeat 50% 0;
+    background-size: 1150px 746px;
+  }
+
   .info__title {
     font-size: 43px;
     line-height: 50px;
-    background: #f9f9f9 url("../img/hero-tablet@1x.jpg") no-repeat 50% 0;
-    background-size: 1150px 746px;
     padding-top: 151px;
     padding-bottom: 375px;
   }
@@ -75,11 +79,14 @@
 }
 
 @media (min-width: 1150px) {
+  .info__header {
+    background: #f9f9f9 url("../img/hero-desktop@1x.jpg") no-repeat 50% 0;
+    background-size: 1150px 746px;
+  }
+
   .info__title {
     font-size: 53px;
     line-height: 57px;
-    background: #f9f9f9 url("../img/hero-desktop@1x.jpg") no-repeat 50% 0;
-    background-size: 1150px 746px;
     padding-bottom: 361px;
   }
 
