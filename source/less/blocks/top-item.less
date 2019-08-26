@@ -1,7 +1,7 @@
 .top-item {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  margin-left: 30px;
+  width: 260px;
 
   p {
     margin: 0;
@@ -16,6 +16,8 @@
   margin: 0;
   padding: 0;
   margin-top: 34px;
+  display: flex;
+  flex-direction: column;
 }
 
 .top-item__title {
@@ -24,6 +26,8 @@
   margin: 0;
   padding: 0;
   margin-bottom: 14px;
+  margin-top: 57px;
+  font-weight: 400;
 }
 
 .top-item__description {
@@ -33,6 +37,7 @@
   line-height: 20px;
   color: #63d1bb;
   margin-bottom: 35px;
+  font-weight: 100;
 }
 
 .top-item__list {
@@ -41,7 +46,7 @@
   font-family: "Open Sans", "Arial", sans-serif;
   margin: 0;
   padding: 0;
-  margin-top: 35px;
+  margin-top: 25px;
   margin-left: -2px;
   margin-bottom: 29px;
 
@@ -64,6 +69,12 @@
 .top-item__image {
   padding: 0;
   margin-bottom: 30px;
+  box-sizing: content-box;
+
+  img {
+    width: 260px;
+    height: 315px;
+  }
 }
 
 .top-item__price {
@@ -74,6 +85,7 @@
   line-height: 24px;
   margin: 0;
   padding: 0;
+  margin-bottom: 20px;
 }
 
 .top-item__order {
@@ -82,4 +94,98 @@
   font-size: 17px;
   line-height: 20px;
   margin-bottom: 76px;
+}
+
+@media (min-width: 768px) {
+  .top-item {
+    width: 668px;
+    position: relative;
+  }
+
+  .top-item__header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .top-item__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 60px;
+  }
+
+  .top-item__description {
+    font-size: 17px;
+    line-height: 17px;
+    padding-right: 28px;
+    margin-top: 57px;
+    padding-top: 14px;
+    width: 71px;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+  .top-item__image {
+    position: absolute;
+    right: 1px;
+    top: 175px;
+    z-index: -1;
+
+    img {
+      width: 333px;
+      height: 404px;
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  .top-item {
+    width: 1050px;
+
+    p {
+      margin-left: 175px;
+    }
+  }
+
+  .top-item__title {
+    font-size: 53px;
+    line-height: 57px;
+    margin-bottom: 60px;
+    margin-top: 136px;
+    order: 2;
+  }
+
+  .top-item__description {
+    margin-top: 136px;
+    padding-top: 14px;
+    padding-left: 48px;
+    padding-right: 58px;
+    width: 71px;
+    order: 1;
+  }
+
+  .top-item__header {
+    justify-content: flex-start;
+  }
+
+  .top-item__list {
+    margin-left: 175px;
+    margin-bottom: 114px;
+  }
+
+  .top-item__price {
+    margin-left: 175px;
+  }
+
+  .top-item__order {
+    margin-left: 175px;
+  }
+
+  .top-item__image {
+    top: 115px;
+
+    img {
+      width: 525px;
+      height: 636px;
+    }
+  }
 }

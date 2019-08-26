@@ -1,7 +1,12 @@
 .about-us {
-  margin: 0;
+  margin: 0 auto;
+  width: 260px;
   padding: 0;
-  padding-left: 30px;
+}
+
+.about-us__wrap {
+  display: flex;
+  flex-direction: column;
 }
 
 .about-us__title {
@@ -18,7 +23,35 @@
 }
 
 .about-us__description {
+  width: 300px;
   font-size: 17px;
   line-height: 20px;
   margin-top: 88px;
+}
+
+@media (min-width: 768px) {
+  .about-us {
+    width: 668px;
+  }
+
+  .about-us__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .about-us__wrap {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1150px) {
+  .about-us {
+    width: 700px;
+  }
+
+  .about-us__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
