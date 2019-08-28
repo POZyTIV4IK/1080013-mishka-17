@@ -1,9 +1,9 @@
 @import "blocks/about-us.less";
 @import "blocks/info.less";
+@import "blocks/main-catalog.less";
 @import "blocks/main-nav.less";
 @import "blocks/page-footer.less";
 @import "blocks/page-header.less";
-@import "blocks/page-main-catalog.less";
 @import "blocks/page-main.less";
 @import "blocks/product.less";
 @import "blocks/site-list.less";
@@ -11,6 +11,7 @@
 @import "blocks/top-item.less";
 @import "blocks/user-list.less";
 @import "blocks/button.less";
+@import "variables.less";
 
 @font-face {
   font-family: "Open Sans Bold";
@@ -23,6 +24,8 @@
 }
 
 body {
+  margin: 0;
+  padding: 0;
   font-family: "Open Sans Bold", "Arial", sans-serif;
   color: #444444;
 
@@ -40,6 +43,22 @@ body {
   border: 0;
   padding: 0;
   white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
