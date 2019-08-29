@@ -1,11 +1,11 @@
 .info {
   margin: 0;
   padding: 0;
-  margin-bottom: 31px;
+  margin-bottom: 27px;
 }
 
 .info__header {
-  background: #f9f9f9 url("../img/hero-mobile@1x.jpg") no-repeat 50% 0;
+  background: #f9f9f9 url("../img/hero-mobile@1x.jpg") no-repeat -126px -17px;
   background-size: 575px 373px;
 
   p {
@@ -21,7 +21,7 @@
   text-align: center;
   font-size: 27px;
   line-height: 30px;
-  padding-top: 86px;
+  padding-top: 70px;
   padding-bottom: 123px;
 }
 
@@ -53,7 +53,7 @@
   font-size: 19px;
   line-height: 24px;
   padding-left: 30px;
-  padding-top: 27px;
+  padding-top: 26px;
   color: white;
   padding-bottom: 28px;
 }
@@ -62,7 +62,7 @@
 .info__link-toy-logo {
   position: absolute;
   top: 23px;
-  right: 36px;
+  right: 35px;
   width: 41px;
   height: 62px;
   opacity: 0.5;
@@ -74,14 +74,14 @@
 
 .info__link-toy-logo {
   top: 21px;
-  right: 27px;
+  right: 26px;
   width: 60px;
   height: 60px;
 }
 
 @media (min-width: @tablet-width) {
   .info {
-    margin-bottom: 53px;
+    margin-bottom: 48px;
   }
 
   .info__header {
@@ -91,11 +91,23 @@
     border-top: 1px solid #ececec;
   }
 
+  .info__link {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 36px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+
   .info__title {
     font-size: 43px;
     line-height: 50px;
-    padding-top: 151px;
-    padding-bottom: 375px;
+    padding-top: 153px;
+    padding-bottom: 490px;
+  }
+
+  .info__title--gap {
+    display: none;
   }
 
   .info__wrap {
@@ -103,12 +115,22 @@
     flex-wrap: nowrap;
     justify-content: center;
     margin: 0 auto;
+    margin-top: -117px;
     position: relative;
   }
 
   .info__item {
     width: 334px;
     height: 117px;
+  }
+
+  .info__link-interior-logo {
+    top: 30px;
+  }
+
+  .info__link-toy-logo {
+    top: 31px;
+    right: 32px;
   }
 
   .info__wrap::after {
@@ -128,7 +150,7 @@
 
 @media (min-width: @desktop-width) {
   .info {
-    margin-bottom: 132px;
+    margin-bottom: 124px;
   }
 
   .info__header {
@@ -139,7 +161,7 @@
   .info__title {
     font-size: 53px;
     line-height: 57px;
-    padding-bottom: 361px;
+    padding-bottom: 477px;
   }
 
   .info__item {

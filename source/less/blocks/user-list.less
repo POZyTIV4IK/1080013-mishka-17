@@ -14,10 +14,10 @@
 
 .user-list__item {
   width: auto;
-  padding-left: 46px;
-  height: 56px;
-  padding-top: 29px;
-  border-top: 1px solid grey;
+  padding-left: 77px;
+  height: 52px;
+  padding-top: 26px;
+  border-top: 1px solid #ececec;
   position: relative;
 }
 
@@ -31,12 +31,13 @@
   font-size: 15px;
   line-height: 24px;
   font-family: "Open Sans", "Arial", sans-serif;
+  color: #444444;
 }
 
 .user-list__basket-icon {
   position: absolute;
-  top: 31px;
-  left: 0;
+  top: 29px;
+  left: 31px;
 
   width: 21px;
   height: 18px;
@@ -48,8 +49,8 @@
 
 .user-list__search-icon {
   position: absolute;
-  top: 32px;
-  left: 0;
+  top: 31px;
+  left: 33px;
 
   width: 18px;
   height: 18px;
@@ -75,8 +76,8 @@
   }
 
   .user-list__item--search {
-    width: 81px;
-    height: 88px;
+    width: 82px;
+    height: 90px;
     padding: 0;
     border-left: 1px solid #ececec;
 
@@ -87,19 +88,19 @@
 
   .user-list__search-icon {
     top: 36px;
-    left: 34px;
+    left: 35px;
   }
 
   .user-list__item--basket {
     width: 182px;
     height: 55px;
-    padding-left: 83px;
-    padding-top: 33px;
+    padding-left: 82px;
+    padding-top: 31px;
     border-left: 1px solid #ececec;
   }
 
   .user-list__basket-icon {
-    top: 36px;
+    top: 34px;
     left: 33px;
   }
 
@@ -108,7 +109,7 @@
     margin: 0;
     display: flex;
     height: 41px;
-    padding-top: 20px;
+    padding-top: 13px;
     width: 100%;
     justify-content: flex-end;
   }
@@ -122,5 +123,14 @@
 @media (min-width: @desktop-width) {
   .user-list {
     width: 350px;
+  }
+
+  .user-list__search-icon {
+    top: 37px;
+    left: 31px;
+  }
+
+  .user-list__basket-icon {
+    left: 30px;
   }
 }

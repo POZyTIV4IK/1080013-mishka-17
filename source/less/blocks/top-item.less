@@ -9,7 +9,7 @@
     font-size: 15px;
     line-height: 24px;
     font-family: "Open Sans", "Arial", sans-serif;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
   }
 }
 
@@ -25,7 +25,7 @@
   line-height: 30px;
   margin: 0;
   padding: 0;
-  margin-bottom: 14px;
+  margin-bottom: 6px;
   font-weight: 400;
 }
 
@@ -35,8 +35,9 @@
   font-size: 17px;
   line-height: 20px;
   color: #63d1bb;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
   font-weight: 100;
+  text-transform: uppercase;
 }
 
 .top-item__list {
@@ -46,28 +47,33 @@
   margin: 0;
   padding: 0;
   margin-left: -2px;
-  margin-bottom: 29px;
+  margin-bottom: 26px;
 
   tr {
     width: 260px;
     margin: 0;
     padding: 0;
     height: 18px;
-    padding-top: 9px;
-    padding-bottom: 13px;
+    padding-top: 7px;
+    padding-bottom: 14px;
     display: block;
     border-bottom: 1px solid #ececec;
     text-align: left;
   }
+
+  td {
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .top-item__name {
-  width: 98px;
+  width: 95px;
 }
 
 .top-item__image {
   padding: 0;
-  margin-bottom: 26px;
+  margin-bottom: 20px;
   box-sizing: content-box;
 
   img {
@@ -78,13 +84,13 @@
 
 .top-item__price {
   display: inline-block;
-  width: 249px;
+  width: 260px;
   text-align: center;
   font-size: 17px;
   line-height: 24px;
   margin: 0;
   padding: 0;
-  margin-bottom: 24px;
+  margin-bottom: 25px;
 }
 
 .top-item__order {
@@ -92,7 +98,8 @@
   padding: 0;
   font-size: 17px;
   line-height: 20px;
-  margin-bottom: 74px;
+  margin-bottom: 69px;
+  width: 256px;
 }
 
 @media (min-width: @tablet-width) {
@@ -101,7 +108,9 @@
     position: relative;
 
     p {
-      margin-bottom: 35px;
+      margin-bottom: 33px;
+      font-size: 17px;
+      line-height: 30px;
     }
   }
 
@@ -113,14 +122,14 @@
   .top-item__title {
     font-size: 43px;
     line-height: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 49px;
   }
 
   .top-item__description {
     font-size: 17px;
     line-height: 17px;
-    margin-top: 4px;
-    margin-right: 28px;
+    margin-top: 10px;
+    margin-right: 25px;
     padding-top: 0;
     width: 71px;
     height: 100%;
@@ -129,8 +138,8 @@
 
   .top-item__image {
     position: absolute;
-    right: 1px;
-    top: 105px;
+    right: 0;
+    top: 107px;
     z-index: -1;
 
     img {
@@ -140,15 +149,23 @@
   }
 
   .top-item__list {
-    margin-bottom: 53px;
+    margin-bottom: 54px;
+
+    tr {
+      width: 292px;
+    }
   }
 
   .top-item__price {
-    margin-bottom: 38px;
+    margin-bottom: 34px;
+    font-size: 20px;
+    line-height: 24px;
+    width: 290px;
   }
 
   .top-item__order {
-    margin-bottom: 124px;
+    margin-bottom: 118px;
+    width: 287px;
   }
 }
 
@@ -158,21 +175,21 @@
 
     p {
       margin-left: 175px;
-      margin-bottom: 46px;
+      margin-bottom: 47px;
     }
   }
 
   .top-item__title {
     font-size: 53px;
     line-height: 57px;
-    margin-bottom: 45px;
+    margin-bottom: 50px;
     order: 2;
   }
 
   .top-item__description {
-    padding-top: 14px;
+    padding-top: 6px;
     padding-left: 47px;
-    padding-right: 58px;
+    padding-right: 54px;
     width: 70px;
     order: 1;
     margin-right: 0;
@@ -184,22 +201,28 @@
   }
 
   .top-item__list {
-    margin-left: 175px;
-    margin-bottom: 108px;
+    margin-left: 172px;
+    margin-bottom: 106px;
+
+    tr {
+      padding-top: 5px;
+      padding-bottom: 16px;
+    }
   }
 
   .top-item__price {
-    margin-left: 175px;
-    margin-bottom: 35px;
+    margin-left: 177px;
+    margin-bottom: 34px;
   }
 
   .top-item__order {
     margin-left: 175px;
-    margin-bottom: 164px;
+    margin-bottom: 155px;
+    width: 289px;
   }
 
   .top-item__image {
-    top: -61px;
+    top: -52px;
 
     img {
       width: 525px;
