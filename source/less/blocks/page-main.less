@@ -1,17 +1,17 @@
 .page-main {
-  width: 320px;
+  min-width: 320px;
   padding: 0;
   margin: 0 auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: @tablet-width) {
   .page-main {
-    width: 668px;
+    min-width: 768px;
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: @desktop-width) {
   .page-main {
-    width: 1050px;
+    min-width: 1150px;
   }
 }

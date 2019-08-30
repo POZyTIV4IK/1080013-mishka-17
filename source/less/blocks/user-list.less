@@ -1,8 +1,11 @@
 .user-list {
   color: black;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-a {
+.user-list__link {
   text-decoration: none;
   color: black;
   font-size: 17px;
@@ -10,45 +13,124 @@ a {
 }
 
 .user-list__item {
-  width: 260px;
-  text-align: center;
-  height: 56px;
-  padding-top: 33px;
-  border-top: 1px solid grey;
+  width: auto;
+  padding-left: 77px;
+  height: 52px;
+  padding-top: 26px;
+  border-top: 1px solid #ececec;
+  position: relative;
 }
 
 .user-list__item--delivery {
   display: none;
 }
 
-@media (min-width: 768px) {
+.user-list__delivery {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  line-height: 24px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: #444444;
+}
+
+.user-list__basket-icon {
+  position: absolute;
+  top: 29px;
+  left: 31px;
+
+  width: 21px;
+  height: 18px;
+
+  path {
+    fill: #d3d2d2;
+  }
+}
+
+.user-list__search-icon {
+  position: absolute;
+  top: 31px;
+  left: 33px;
+
+  width: 18px;
+  height: 18px;
+
+  path {
+    fill: #d3d2d2;
+  }
+}
+
+@media (min-width: @tablet-width) {
   .user-list {
     width: 348px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-end;
+    height: 150px;
   }
 
-  .user-list__item--basket {
-    width: 268px;
+  .user-list__item {
+    border-top: none;
+    margin: 0;
+    padding: 0;
   }
 
   .user-list__item--search {
-    width: 80px;
+    width: 82px;
+    height: 90px;
+    padding: 0;
+    border-left: 1px solid #ececec;
+
+    .user-list__link {
+      font-size: 0;
+    }
+  }
+
+  .user-list__search-icon {
+    top: 36px;
+    left: 35px;
+  }
+
+  .user-list__item--basket {
+    width: 182px;
+    height: 55px;
+    padding-left: 82px;
+    padding-top: 31px;
+    border-left: 1px solid #ececec;
+  }
+
+  .user-list__basket-icon {
+    top: 34px;
+    left: 33px;
   }
 
   .user-list__item--delivery {
     padding: 0;
     margin: 0;
     display: flex;
-    height: 56px;
-    padding-top: 33px;
-    width: 348px;
+    height: 41px;
+    padding-top: 13px;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .user-list__login-icon {
+    top: 29px;
+    left: 12px;
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: @desktop-width) {
   .user-list {
     width: 350px;
+  }
+
+  .user-list__search-icon {
+    top: 37px;
+    left: 31px;
+  }
+
+  .user-list__basket-icon {
+    left: 30px;
   }
 }

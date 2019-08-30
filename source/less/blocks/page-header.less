@@ -1,16 +1,21 @@
-.page-header {
+.page-header__wrap {
   display: flex;
   flex-direction: column;
   min-width: 320px;
-  margin-top: 22px;
-  margin-bottom: 22px;
-  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
-@media (min-width: 768px) {
-  .page-header {
+@media (min-width: @tablet-width) {
+  .page-header__wrap {
     min-width: 768px;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__wrap {
+    min-width: 1150px;
   }
 }
