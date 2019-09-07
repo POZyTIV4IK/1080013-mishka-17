@@ -1,0 +1,271 @@
+.contacts {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 39px;
+}
+
+.contacts__wrap {
+  padding: 0;
+  width: 260px;
+  margin: 0 auto;
+}
+
+.contacts__title {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 26px;
+}
+
+.contacts__info {
+  margin-bottom: 37px;
+}
+
+.contacts__email {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.contacts__email-link {
+  color: #444444;
+  text-decoration: none;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #62d1ba;
+}
+
+.contacts__address {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__item {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+
+  &--value {
+    width: 183px;
+  }
+}
+
+.contacts__map {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 39px;
+  line-height: 0;
+  text-align: center;
+
+  picture {
+    display: none;
+  }
+
+  iframe {
+    display: flex;
+    flex-grow: 1;
+    width: 320px;
+    height: 457px;
+  }
+
+  &--nojs {
+    picture {
+      display: flex;
+    }
+
+    iframe {
+      display: none;
+    }
+
+    &::before {
+      position: absolute;
+      top: 145px;
+      left: 40%;
+      z-index: 1;
+      content: "";
+      display: block;
+      width: 66px;
+      height: 101px;
+      background: url("../img/icon-map-pin.svg") no-repeat 50% 50%;
+      background-size: 66px 101px;
+    }
+  }
+}
+
+.contacts__write-us-btn {
+  margin: 0 auto;
+  padding: 0;
+  width: 256px;
+  font-size: 18px;
+  line-height: 20px;
+  padding-top: 13px;
+  padding-bottom: 15px;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    margin-bottom: 57px;
+  }
+
+  .contacts__wrap {
+    width: 668px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contacts__title {
+    position: relative;
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 50px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -15px;
+      right: 2px;
+      display: block;
+      width: 47px;
+      height: 82px;
+      background: url("../img/icon-flag.svg") no-repeat 50% 50%;
+      background-size: 47px 82px;
+    }
+  }
+
+  .contacts__address,
+  .contacts__email {
+    width: 334px;
+    justify-content: flex-start;
+  }
+
+  .contacts__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 55px;
+  }
+
+  .contacts__email-link {
+    font-size: 17px;
+    padding-bottom: 2px;
+  }
+
+  .contacts__item {
+    font-size: 17px;
+
+    &--name {
+      width: 77px;
+    }
+
+    &--value {
+      width: 227px;
+    }
+  }
+
+  .contacts__map {
+    margin-bottom: 55px;
+
+    img,
+    iframe {
+      width: 768px;
+      height: 457px;
+    }
+
+    &--nojs {
+      &::before {
+        top: 138px;
+      }
+    }
+  }
+
+  .contacts__write-us-btn {
+    font-size: 17px;
+    width: 226px;
+    padding-top: 15px;
+    padding-bottom: 13px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    width: 1050px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: 457px;
+  }
+
+  .contacts__wrap {
+    width: 350px;
+    padding-left: 175px;
+  }
+
+  .contacts__title {
+    font-size: 53px;
+    line-height: 57px;
+    padding-top: 71px;
+
+    &::after {
+      top: 63px;
+      left: -110px;
+    }
+  }
+
+  .contacts__info {
+    flex-direction: column;
+  }
+
+  .contacts__e-mail,
+  .contacts__address {
+    justify-content: flex-start;
+  }
+
+  .contacts__address {
+    margin-bottom: 22px;
+  }
+
+  .contacts__item {
+    padding-right: 0;
+
+    &--name {
+      width: 80px;
+      padding-left: 1px;
+    }
+  }
+
+  .contacts__map {
+    order: 1;
+    width: 525px;
+    height: 457px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    box-sizing: content-box;
+
+    img,
+    iframe {
+      width: 525px;
+      height: 457px;
+    }
+
+    &--nojs {
+      &::before {
+        top: 148px;
+      }
+    }
+  }
+
+  .contacts__write-us-btn {
+    align-self: flex-start;
+    margin-left: 175px;
+  }
+}
