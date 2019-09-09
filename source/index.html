@@ -245,7 +245,30 @@
         </div>
         <a class="contacts__write-us-btn button" href="#">Напишите нам</a>
       </section>
+
+
+        <div class="overlay">
+          <form class="modal modal-overlay__modal" action="https://echo.htmlacademy.ru" method="POST">
+                <h2 class="modal__title">Добавить в корзину</h2>
+
+                <fieldset class="modal__fieldset">
+                  <legend class="modal__legend">Выберите размер:</legend>
+
+                  <div class="modal__input-wrapper">
+                    <input class="modal__radio visually-hidden" type="radio" id="size-s" name="size" value="1" checked>
+                    <label class="modal__label" for="size-s">S</label>
+                    <input class="modal__radio visually-hidden" type="radio" id="size-m" name="size" value="2">
+                    <label class="modal__label" for="size-m">M</label>
+                    <input class="modal__radio visually-hidden" type="radio" id="size-l" name="size" value="3">
+                    <label class="modal__label" for="size-l">L</label>
+                  </div>
+                </fieldset>
+
+                <button class="modal__button button" type="submit">Добавить</button>
+              </form>
+            </div>
   </main>
+
 
   <footer class="page-footer">
     <div class="page-footer__wrap">
@@ -309,6 +332,7 @@
       </div>
     </div>
   </footer>
+
   <script src="js/script.min.js"></script>
 </body>
 </html>
