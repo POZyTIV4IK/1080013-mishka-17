@@ -24,11 +24,17 @@
 }
 
 .about-us__description {
+  margin: 0;
+  padding: 0;
   width: 260px;
   font-size: 17px;
   line-height: 20px;
   margin-bottom: 83px;
   position: relative;
+}
+
+.about-us__description--present {
+  margin-bottom: 55px;
 }
 
 .about-us__logo {
@@ -103,6 +109,11 @@
     font-size: 20px;
     line-height: 22px;
   }
+
+  .about-us__description--present,
+  .about-us__description--like {
+    margin-bottom: 74px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -119,5 +130,10 @@
   .about-us__description {
     width: 350px;
     margin-bottom: 111px;
+  }
+
+  .about-us__description--present,
+  .about-us__description--like {
+    margin-bottom: 81px;
   }
 }
