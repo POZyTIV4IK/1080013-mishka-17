@@ -87,7 +87,10 @@
               <h2 class="product__name">Зайчик-попрыгайчик</h2>
             </a>
             <p class="product__description">Рост 30 см, вес 200 г</p>
+            <div class="product__cart-wrap">
             <p class="product__price">1 200 руб.</p>
+            <a class="product__button" href="#">Заказать</a>
+          </div>
           </div>
         </li>
         <li class="product__item">
@@ -107,7 +110,10 @@
               <h2 class="product__name product__name--2">Корзинка для белья</h2>
             </a>
             <p class="product__description product__description--2">Диаметр 15 см, высота 10 см</p>
+            <div class="product__cart-wrap">
             <p class="product__price">690 руб.</p>
+            <a class="product__button" href="#">Заказать</a>
+          </div>
           </div>
         </li>
         <li class="product__item product__item--last">
@@ -127,7 +133,10 @@
               <h2 class="product__name">Большая корзинка<br>для игрушек</h2>
             </a>
             <p class="product__description product__description--3">Диаметр 30 см, высота 30 см</p>
+            <div class="product__cart-wrap">
             <p class="product__price">1 500 руб.</p>
+            <a class="product__button" href="#">Заказать</a>
+          </div>
           </div>
         </li>
       </ul>
@@ -148,11 +157,25 @@
         <a class="process__button button" href="#">Сделать заказ</a>
       </div>
     </section>
+
+    <div class="overlay">
+      <form class="modal modal-overlay__modal" action="https://echo.htmlacademy.ru" method="POST">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <fieldset class="modal__fieldset">
+          <legend class="modal__legend">Выберите размер:</legend>
+          <div class="modal__input-wrapper">
+            <input class="modal__radio visually-hidden" type="radio" id="size-s" name="size" value="1" checked>
+            <label class="modal__label" for="size-s">S</label>
+            <input class="modal__radio visually-hidden" type="radio" id="size-m" name="size" value="2">
+            <label class="modal__label" for="size-m">M</label>
+            <input class="modal__radio visually-hidden" type="radio" id="size-l" name="size" value="3">
+            <label class="modal__label" for="size-l">L</label>
+          </div>
+        </fieldset>
+        <button class="modal__button button" type="submit">Добавить</button>
+      </form>
+    </div>
   </main>
-
-
-
-
 
   <footer class="page-footer">
     <div class="page-footer__wrap">

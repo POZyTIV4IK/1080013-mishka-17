@@ -55,3 +55,43 @@ map.classList.remove("contacts__map--nojs");
     });
   }
 })();
+
+
+(function() {
+  var modal = document.querySelector(".modal");
+  var overlay = document.querySelector(".overlay");
+  var modalBtns2 = document.querySelectorAll(".product__button");
+
+  if (modal && overlay && modalBtns2) {
+    modalBtns2 = Array.prototype.slice.call(modalBtns2);
+
+    var closeModal = function() {
+      if (modal.classList.contains("modal--show")) {
+        modal.classList.remove("modal--show");
+      }
+      if (overlay.classList.contains("overlay--show")) {
+        overlay.classList.remove("overlay--show");
+      }
+    }
+
+    modalBtns2.forEach(function(elem) {
+      elem.addEventListener("click", function(evt) {
+        evt.preventDefault();
+        modal.classList.add("modal--show");
+        overlay.classList.add("overlay--show");
+      });
+    });
+
+    overlay.addEventListener("click", closeModal);
+
+    modal.addEventListener("click", function(evt) {
+      evt.stopPropagation();
+    });
+
+    window.addEventListener("keydown", function(evt) {
+      if (evt.keyCode === 27) {
+        closeModal();
+      }
+    });
+  }
+})();

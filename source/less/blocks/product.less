@@ -80,7 +80,15 @@
   width: 233px;
 }
 
-.product__price::after {
+.product__cart-wrap {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.product__button {
+  font-size: 0;
+  line-height: 0;
   content: "";
   position: absolute;
   background-image: url("../img/icon-cart.svg");
@@ -154,7 +162,7 @@
     margin-left: 33px;
   }
 
-  .product__price::after {
+  .product__button {
     right: 34px;
   }
 }
@@ -206,7 +214,7 @@
     margin-left: 28px;
   }
 
-  .product__price::after {
+  .product__button {
     right: 32px;
   }
 }
