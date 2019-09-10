@@ -132,13 +132,12 @@
 
 @media (min-width: @desktop-width) {
   .process {
-    width: 1048px;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    height: 453px;
+    width: 366px;
+    min-height: 453px;
     box-sizing: content-box;
     margin-bottom: 105px;
+    padding-left: 682px;
+    position: relative;
   }
 
   .process__title {
@@ -157,7 +156,10 @@
   }
 
   .process__video {
+    position: absolute;
     width: 682px;
+    left: 0;
+    top: -1px;
 
     img {
       width: 682px;
